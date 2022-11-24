@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(24, 24, 24);
+}
+
+h1 {font-size:3rem; font-weight:700; line-height:1.2; color: #fff}
+h2 {font-size:38px; font-weight:700; line-height:1.2em; color: #fff}
+h3 {font-size:32px; font-weight:400; line-height:1.2em; color: #fff}
+h4 {font-size:24px; font-weight:500; line-height:1.2em}
+h5 {font-size:20px; font-weight:500; line-height:1.2em}
+h6 {font-size:20px; font-weight:500; line-height:1.2em}
+
+p {font-size:18px; font-weight:100; line-height:1.2em;}
+
+p.body-white {
+    color: #fff;
+}
+
+a {text-decoration: none;}
+
+ul {
+    list-style-type: none;
+}
+
+.hero-section {
+    background-image: url(img/home-section1-bg.png);
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Quick Contact Start */
+
+.quick-contact a {
+    font-weight: medium;
+    color: #fff;
+}
+
+.container {
+    width: 1600px;
+    margin: 0 auto;
+}
+
+.quick-contact {
+    background-color: black;
+    color: white;
+    height: 32px;
+}
+
+.quick-contact .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.contact-info {display: flex;}
+.contact-info li {margin-right: 16px;}
+
+.socials-info {display: flex;}
+.socials-info li {margin-left: 16px;}
+
+/* Quick Contact End */
+
+.main-menu {
+    height: 80px;
+}
+
+.main-menu .logo {
+    width: 120px;
+}
+
+.main-menu {
+    height: 120px;
+}
+
+.main-menu .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.main-navigation {
+    display: flex;
+
+}
+
+.main-navigation li {margin-left: 16px;}
+.main-navigation a {color: #fff;font-weight: medium;font-size: 18px;}
+
+/* Main Menu End */
+
+.hero-banner  {
+    height: 660px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-wrapper * {
+    margin-bottom: 30px;
+    width: 50%;
+}
+
+.hero-wrapper button {
+    width: fit-content;
+    padding: 8px 16px;
+    border: solid #fff 2px;
+    background-color: transparent;
+}
+
+.hero-wrapper button a {
+    font-size: 22px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.hero-wrapper button:hover {
+    background-color: rgba(0,52,124,.5);
+    transition: 0.3s;
+}
+
+/* Services Catalog Start */
+
+.services-catalog {
+    display: grid; 
+    grid-template-columns: 1fr 3fr; 
+    grid-template-rows: 1fr 3fr; 
+    gap: 0px 0px; 
+    align-items: center;
+    height: 480px;
+}
+
+.services-menu ul {
+    display: flex;
+}
+
+.services-menu li {
+    margin-left: -1px;
+}
+
+.services-menu a {
+    width: fit-content;
+    padding: 8px 16px;
+    border: solid #fff 2px;
+    background-color: transparent;
+    font-size: 22px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.services-menu a:hover {
+    background-color: rgba(0,52,124,.5);
+    transition: 0.3s;
+}
+
+/* Specialisations Cards Start */
+
+.specs-container {
+    background-color: rgba(0,52,124,1);
+    text-align: center;
+    color: #fff;
+}
+
+.specs-container .container {
+    padding: 44px 0;
+}
+
+.spec-items {
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr) ; 
+    /* grid-auto-rows: minmax(480px, auto); */
+    align-items: center;
+
+}
+
+.spec:nth-of-type(1) {
+    background-image: url(img/serv-1_Healthcare.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 110px 0;
+    opacity: .8;
+}
+
+.spec:nth-of-type(2) {
+    background-image: url(img/serv-2_Hospitality.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 110px 0;
+    opacity: .8;
+}
+
+.spec:nth-of-type(3) {
+    background-image: url(img/serv-3_Education.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 110px 0;
+    opacity: .8;
+}
+
+.spec:nth-of-type(4) {
+    background-image: url(img/serv-4_Manufacturers.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 110px 0;
+    opacity: .8;
+}
+
+.spec:nth-of-type(1):hover,
+.spec:nth-of-type(2):hover,
+.spec:nth-of-type(3):hover,
+.spec:nth-of-type(4):hover
+ {
+    opacity: 1;
+    transition: .5s;
+}
+
+.spec h4 {
+    opacity: 0;
+    line-height: 10rem;
+}
+
+.spec h4:hover {
+    opacity: 1;
+    transition: .3s;
+}
+
+/* Feature section Start */
+
+.feature {
+    background-color: rgba(0,52,124,1);
+    color: #fff;
+    text-align: center;
+    padding: 32px 0;
+}
+
+.feature h4 {margin-bottom: 16px;}
+.feature p {font-size:1.2rem; line-height: 1.8rem;}
+
+.feat-header {
+    padding: 16px 0;
+}
+
+.comp-feat {
+    display: flex;
+    flex: 1 2 0;
+    /* width: -moz-min-content;
+    width: min-content; */
+}
+
+.comp-feat>* {
+    flex: 1 1 160px;
+    margin: 20px 80px;
+  }
+
+.comp-feat img {margin-bottom: 16px;}
+
+/* SEO Section */
+
+.seo-section {
+    background-color: #3D3D3D;
+    color: #fff;
+    padding: 32px 0;
+}
+
+.seo-section h4 {margin-bottom: 16px;}
+
+.seosec-grid {
+    display: flex;
+}
+
+.seosec-grid:nth-of-type(1) {
+    flex: 2 1 0;
+}
+
+.seosec-grid:nth-of-type(1) {
+    flex: 1 1 0;
+}
+
+
